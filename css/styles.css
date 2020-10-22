@@ -1,0 +1,501 @@
+/*reset*/
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+/*MINDEN-OLDAL-----------------------------------*/
+/*fejléc*/
+header {
+    display: block;
+    background-image: url(../pics/flag2.jpg), linear-gradient(to right, rgb(255, 255, 255, 1), rgba(255,255,255,0.9), 70%, rgba(255,255,255,0.01) 100%);
+    background-repeat: no-repeat;
+    background-size: 120% 180%;
+    background-blend-mode: overlay;
+}
+
+h1 {
+    text-align: left;
+    color:rgba(0,82,159,1);
+    font-size: 6.5rem;
+    font-family: 'BeonRegular';
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    word-spacing: 12px;
+    text-shadow: 2px 2px 0px rgb(254, 190, 16), 3px 3px 0px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
+    padding: 10px 20px;
+    white-space: pre-line;    
+}
+
+h2 {
+    color:rgba(254,190,16,1);
+    font-size:4rem;
+    font-family: 'BeonRegular';
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+    width:100%;
+    text-shadow: 2px 2px 2px rgb(0, 82, 152);
+}
+
+/*menu*/
+.menu {
+    grid-area: 1/1/4/2;
+    /*border-top: 15px solid rgba(254,190,16,1);
+    border-radius: 1px 50px 1px 1px;*/
+}
+
+.menu div:first-of-type {
+    border-top: 15px solid rgba(254,190,16,1);
+    border-radius: 1px 50px 1px 1px;  
+}
+.menu div:nth-last-of-type(1) {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+.menu a {
+    padding: 5px 15px;
+    font-size: 2.8rem;
+    color: rgba(0,82,159,1);
+    display: block;
+    text-decoration: none;
+    border-bottom: 3px solid rgba(254,190,16,1);
+    border-right: 5px solid rgba(254,190,16,1);
+    border-radius: 5px;
+    font-family: 'BeonRegular';
+}
+.menu a:hover {
+    color: rgba(254,190,16,1);
+}
+
+/*lábléc*/
+footer {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    text-align: right;
+    padding-right: 20px;
+    border-bottom: 15px solid rgba(254,190,16,1);
+    border-radius: 50px 1px;
+}
+
+/*INDEX.html-------------------------------------*/
+/*oldalháló mainpage*/
+.mainpage {
+    display: grid;
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: 300px auto auto auto;
+    grid-gap: 5px;
+    
+    background-image: url(../pics/main.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mainpage .menu {
+    grid-area: 1/1/5/2;
+}
+
+.mainpage div {
+    background-color: white;
+    opacity: 0.95;
+}
+
+/*eredmenyek*/
+.results {
+    grid-area: 1/3/3/4;
+    border-top: 15px solid rgba(254,190,16,1);
+    border-radius: 1px 50px 5px;
+    padding:0px 0px 20px 0px;
+}
+
+/*eredmenyek lista*/
+li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 5px;
+    list-style-type: none;
+    line-height: 1.4;    
+}
+
+li::first-line {
+    text-decoration-line: underline;
+    font-size: 1.5rem;
+}
+li a:link {
+    color: rgba(0,82,159,1);
+}
+
+li a:visited {
+    color: rgba(0,82,159,1);
+}
+
+li ul {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    padding: 2px;
+}
+
+.news {
+    grid-area: 1/2/5/3;
+    border-top: 15px solid rgba(254,190,16,1);
+    border-radius: 1px 50px 5px;
+}
+/*táblázat*/
+.ligatable {
+    grid-area: 3/3/4/4;
+    border-top: 15px solid rgba(254,190,16,1);
+    border-radius: 1px 50px 5px;
+    padding:0px 0px 20px 0px;
+}
+
+.ligatable table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 5px;
+    border-collapse: collapse;
+}
+
+.ligatable caption {
+    font-size: 1.5rem;
+    padding: 0px 5px 10px 0px;
+    text-align: left;
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+
+.ligatable th {
+    font-size: 1.4rem;
+    padding: 0px 5px;
+    border-bottom: 1px solid black;
+}
+
+.ligatable td {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.8;
+}
+.ligatable td:first-child, .ligatable th:first-child {
+    text-align: left;
+    padding: 0px 5px 0px 0px;
+}
+
+.ligatable tbody tr:hover {
+    background-color: rgba(254,190,16,1);
+}
+
+/*szovegresz*/
+h3 {
+    font-family: "Lucida Console", Monaco, monospace;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    text-decoration-line: underline;
+    border-top: 2px ridge rgba(254,190,16,1);
+}
+h4 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 15px;
+    text-decoration-line: underline;
+    font-weight: normal;
+}
+
+.news p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3rem;
+    text-align: justify;
+    padding: 10px;
+}
+.news p q {
+    font-style: italic;
+    padding: 20px;
+}
+/*képek videók*/
+.photo div, .video div {
+    background-image: none;
+    padding: 0px 0px 20px 0px;
+}
+
+.photo, .video div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-image: linear-gradient(white,white);
+}
+
+.photo img, .video video {
+    width: 100%;
+}
+
+/*HONOURS.html-------------------------------------*/
+.mainhonours {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 300px auto;
+    grid-gap: 5px;
+    background-image: url(../pics/trop.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mainhonours div {
+    background-color: white;
+    opacity: 0.95;
+}
+
+.honours {
+    grid-area: 1/2/3/3;
+    border-top: 15px solid rgba(254,190,16,1);
+    border-radius: 1px 50px 5px;
+}
+
+.honours {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.honours h3 {
+    text-decoration-line: none;
+    font-variant: small-caps;
+    width: 100%;
+    font-size: 3.0rem;
+    text-shadow: 2px 2px 2px rgba(254,190,16,0.5);
+}
+
+.number {
+    font-size: 3.5rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgba(254,190,16,1);
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 0 2px rgba(254,190,16,1);
+    text-align: center;
+    align-self: center;
+    line-height: 95px;
+}
+
+.number:hover {
+    transition: transform 2s;
+    transform: rotateY(1440deg);
+    transition-timing-function: ease-out;
+}
+
+.honours .year {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    flex-basis: 500px;
+    word-spacing: 20px;
+    line-height: 30px;
+    padding: 10px 0px;
+}
+
+.perez {
+    width: 300px;
+    padding: 10px 0px;
+}
+
+/*TEAM.html-------------------------------------*/
+.mainteam {
+    display: grid;
+    grid-template-columns: 190px auto;
+    grid-template-rows: 300px auto;
+    grid-gap: 5px;
+    background-image: url(../pics/Real-Madrid-Stadium.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;   
+}
+
+.mainteam div {
+    background-color: white;
+    opacity:0.95;
+}
+
+.team {
+    grid-area: 1/2/3/3;
+    border-top: 15px solid rgba(254,190,16,1);
+    border-radius: 1px 50px 5px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.team div img {
+    width: 240px;
+    margin: 20px;
+    box-shadow: 10px 10px 4px rgba(0,82,159,1);      
+}
+
+.team h3 {
+    text-decoration-line: none;
+    font-variant: small-caps;
+    width: 100%;
+    font-size: 3.0rem;
+    text-shadow: 2px 2px 2px rgba(254,190,16,0.5);    
+}
+
+/*tooltip*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    color: rgba(0,82,159,1);
+    background-color: rgba(254,190,16,1);
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 0;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.0rem;
+    font-variant: small-caps;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}    
+/*CONTACT.html-------------------------------------*/
+.maincontact {
+    display: grid;
+    grid-template-columns: 190px auto;
+    grid-template-rows: 320px auto;
+    grid-gap: 5px;      
+}
+
+.contact {
+    grid-area: 1/2/3/3;
+    border-top: 15px solid rgba(254,190,16,1);
+    border-radius: 1px 50px 5px;
+}
+
+legend {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    padding: 0px 10px;    
+}
+
+fieldset {
+    border: 3px ridge rgba(0,82,159,1);
+    padding: 20px;
+    background-image: url(../pics/logo.png);
+    background-position-y: center;
+    background-position-x: 99%;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.8);
+    background-blend-mode: color;
+}
+
+label {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-variant: small-caps;
+    padding: 0px 10px;
+}
+
+form div {
+    padding: 20px;
+}
+
+input[type=radio] {
+    margin: 10px;
+}
+
+input[type=text], input[type=email], select, textarea {
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: 1px solid rgba(0,82,159,1);
+    margin: 10px;
+}
+
+input[type=text], input[type=email] {
+    width: 40%; 
+    min-width: 200px;
+}
+
+textarea {
+    width: 80%;
+}
+
+input[type=submit], input[type=reset] {
+    border-radius: 4px;
+    padding: 20px 40px;
+    background-color: rgba(0,82,159,1);
+    color: white;
+    font-weight: bold;
+    margin: 10px 50px 10px 10px;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: rgba(0,82,159,0.7);
+}
+
+.logo {
+    position: absolute;
+    top: 350px;
+    left: 600px;
+    z-index: -1;
+}
+
+.logo img {
+    width: 150px;
+}
+
+/*MOBIL-VÁLTOZAT-------------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (max-width: 768px) {
+h1 {
+    font-size: 5.0rem;
+}
+
+.team div img {
+    width: 180px;
+    margin: 10px;   
+}
+
+.results {
+    display: none;
+}
+
+.ligatable {
+    display: none;
+}
+
+}
