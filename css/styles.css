@@ -119,7 +119,7 @@ footer {
 }
 
 /*eredmenyek lista*/
-li {
+ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
@@ -128,19 +128,15 @@ li {
     line-height: 1.4;    
 }
 
-li::first-line {
+ul::first-line {
     text-decoration-line: underline;
     font-size: 1.5rem;
 }
-li a:link {
+ul a:link, ul a:visited {
     color: rgba(0,82,159,1);
 }
 
-li a:visited {
-    color: rgba(0,82,159,1);
-}
-
-li ul {
+ul li {
     font-size: 1.3rem;
     font-weight: lighter;
     padding: 2px;
