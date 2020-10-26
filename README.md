@@ -19,8 +19,8 @@
 
 ### Javítandó részek
 - [x] eredménylista ` <ul> <li> ` rendszer javítása *index.html*-ben
-- [ ] CSS egyszerűsítése, duplikált részek törlése *styles.css*-ben
-- [ ] képhivatkozások javítása *team.html* és *honours.html*-ben
+- [x] CSS egyszerűsítése, duplikált részek törlése *styles.css*-ben
+- [x] képhivatkozások javítása *team.html* és *honours.html*-ben
 - [ ] hamburgermenü készítése mobilnézet esetén - **mobil first** elősegítése 
 
 ---

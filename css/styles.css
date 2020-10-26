@@ -35,7 +35,7 @@ h1 {
 
 h2 {
     color:rgba(254,190,16,1);
-    font-size:4rem;
+    font-size: 4rem;
     font-family: 'BeonRegular';
     font-weight: bold;
     text-transform: uppercase;
@@ -44,17 +44,16 @@ h2 {
     text-shadow: 2px 2px 2px rgb(0, 82, 152);
 }
 
-/*menu*/
+/*menü*/
 .menu {
     grid-area: 1/1/4/2;
-    /*border-top: 15px solid rgba(254,190,16,1);
-    border-radius: 1px 50px 1px 1px;*/
 }
 
 .menu div:first-of-type {
     border-top: 15px solid rgba(254,190,16,1);
     border-radius: 1px 50px 1px 1px;  
 }
+
 .menu div:nth-last-of-type(1) {
     z-index: 1;
     position: sticky;
@@ -72,6 +71,7 @@ h2 {
     border-radius: 5px;
     font-family: 'BeonRegular';
 }
+
 .menu a:hover {
     color: rgba(254,190,16,1);
 }
@@ -88,7 +88,6 @@ footer {
 }
 
 /*INDEX.html-------------------------------------*/
-/*oldalháló mainpage*/
 .mainpage {
     display: grid;
     grid-template-columns: 200px auto auto;
@@ -110,15 +109,15 @@ footer {
     opacity: 0.95;
 }
 
-/*eredmenyek*/
+/*eredmények*/
 .results {
     grid-area: 1/3/3/4;
     border-top: 15px solid rgba(254,190,16,1);
     border-radius: 1px 50px 5px;
-    padding:0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
-/*eredmenyek lista*/
+/*eredmények lista*/
 ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
@@ -132,11 +131,13 @@ ul::first-line {
     text-decoration-line: underline;
     font-size: 1.5rem;
 }
-ul a:link, ul a:visited {
+
+ul a:link, 
+ul a:visited {
     color: rgba(0,82,159,1);
 }
 
-ul li {
+li {
     font-size: 1.3rem;
     font-weight: lighter;
     padding: 2px;
@@ -147,12 +148,13 @@ ul li {
     border-top: 15px solid rgba(254,190,16,1);
     border-radius: 1px 50px 5px;
 }
+
 /*táblázat*/
 .ligatable {
     grid-area: 3/3/4/4;
     border-top: 15px solid rgba(254,190,16,1);
     border-radius: 1px 50px 5px;
-    padding:0px 0px 20px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 .ligatable table {
@@ -180,7 +182,9 @@ ul li {
     text-align: center;
     line-height: 1.8;
 }
-.ligatable td:first-child, .ligatable th:first-child {
+
+.ligatable td:first-child, 
+.ligatable th:first-child {
     text-align: left;
     padding: 0px 5px 0px 0px;
 }
@@ -189,7 +193,7 @@ ul li {
     background-color: rgba(254,190,16,1);
 }
 
-/*szovegresz*/
+/*szövegrész*/
 h3 {
     font-family: "Lucida Console", Monaco, monospace;
     text-align: left;
@@ -199,6 +203,7 @@ h3 {
     text-decoration-line: underline;
     border-top: 2px ridge rgba(254,190,16,1);
 }
+
 h4 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -214,17 +219,21 @@ h4 {
     text-align: justify;
     padding: 10px;
 }
+
 .news p q {
     font-style: italic;
     padding: 20px;
 }
+
 /*képek videók*/
-.photo div, .video div {
+.photo div,
+.video div {
     background-image: none;
     padding: 0px 0px 20px 0px;
 }
 
-.photo, .video div {
+.photo,
+.video div {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: nowrap;
@@ -232,7 +241,8 @@ h4 {
     background-image: linear-gradient(white,white);
 }
 
-.photo img, .video video {
+.photo img,
+.video video {
     width: 100%;
 }
 
@@ -242,6 +252,7 @@ h4 {
     grid-template-columns: 200px auto;
     grid-template-rows: 300px auto;
     grid-gap: 5px;
+
     background-image: url(../pics/trop.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -257,9 +268,7 @@ h4 {
     grid-area: 1/2/3/3;
     border-top: 15px solid rgba(254,190,16,1);
     border-radius: 1px 50px 5px;
-}
 
-.honours {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -306,7 +315,7 @@ h4 {
     padding: 10px 0px;
 }
 
-.perez {
+.cup {
     width: 300px;
     padding: 10px 0px;
 }
@@ -317,6 +326,7 @@ h4 {
     grid-template-columns: 190px auto;
     grid-template-rows: 300px auto;
     grid-gap: 5px;
+
     background-image: url(../pics/Real-Madrid-Stadium.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -325,16 +335,14 @@ h4 {
 
 .mainteam div {
     background-color: white;
-    opacity:0.95;
+    opacity: 0.95;
 }
 
 .team {
     grid-area: 1/2/3/3;
     border-top: 15px solid rgba(254,190,16,1);
     border-radius: 1px 50px 5px;
-}
 
-.team {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -381,7 +389,8 @@ h4 {
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-}    
+}
+
 /*CONTACT.html-------------------------------------*/
 .maincontact {
     display: grid;
@@ -406,6 +415,7 @@ legend {
 fieldset {
     border: 3px ridge rgba(0,82,159,1);
     padding: 20px;
+
     background-image: url(../pics/logo.png);
     background-position-y: center;
     background-position-x: 99%;
@@ -427,25 +437,32 @@ form div {
 
 input[type=radio] {
     margin: 10px;
+    user-select: none;
 }
 
-input[type=text], input[type=email], select, textarea {
+input[type=text],
+input[type=email],
+select,
+textarea {
     border-radius: 4px;
     padding: 10px 20px;
     border: 1px solid rgba(0,82,159,1);
     margin: 10px;
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
     width: 40%; 
     min-width: 200px;
 }
 
 textarea {
-    width: 80%;
+    width: 50%;
+    height: 150px;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit],
+input[type=reset] {
     border-radius: 4px;
     padding: 20px 40px;
     background-color: rgba(0,82,159,1);
@@ -456,7 +473,8 @@ input[type=submit], input[type=reset] {
     font-size: 2.5rem;
 }
 
-input[type=submit]:hover, input[type=reset]:hover {
+input[type=submit]:hover,
+input[type=reset]:hover {
     background-color: rgba(0,82,159,0.7);
 }
 
@@ -477,21 +495,21 @@ input[type=submit]:hover, input[type=reset]:hover {
 }
 
 @media screen and (max-width: 768px) {
-h1 {
-    font-size: 5.0rem;
-}
+    h1 {
+        font-size: 5.0rem;
+    }
 
-.team div img {
-    width: 180px;
-    margin: 10px;   
-}
+    .team div img {
+        width: 180px;
+        margin: 10px;   
+    }
 
-.results {
-    display: none;
-}
+    .results {
+        display: none;
+    }
 
-.ligatable {
-    display: none;
-}
+    .ligatable {
+        display: none;
+    }
 
 }
