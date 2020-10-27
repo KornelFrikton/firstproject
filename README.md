@@ -21,7 +21,7 @@
 - [x] eredménylista ` <ul> <li> ` rendszer javítása *index.html*-ben
 - [x] CSS egyszerűsítése, duplikált részek törlése *styles.css*-ben
 - [x] képhivatkozások javítása *team.html* és *honours.html*-ben
-- [ ] hamburgermenü készítése mobilnézet esetén - **mobil first** elősegítése 
+- [x] hamburgermenü készítése mobilnézet esetén - **mobil first** elősegítése 
 
 ---
 *2020.10.23*
