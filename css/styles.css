@@ -78,7 +78,7 @@ h2 {
 
 /*hamburger menü*/
 /*ikon*/
-#menuToggle label div {
+#menuToggle label q {
     display: block;
     width: 30px;
     height: 4px;
@@ -89,13 +89,14 @@ h2 {
     z-index: 1;  
     transform-origin: 4px 0px;
     transition: all 0.3s ease;
+    quotes: none;
 }
-  
-#menuToggle label div:first-child {
+
+#menuToggle label q:first-child {
     transform-origin: 0% 100%;
 }
   
-#menuToggle label div:nth-child(2) {
+#menuToggle label q:nth-child(2) {
     transform-origin: 0% 0%;
 }
 
@@ -121,9 +122,9 @@ h2 {
     color: rgba(254,190,16,1);
 }
 
- #menuToggle input:checked + label div {
+#menuToggle input:checked + label q {
     background: rgba(254,190,16,1);
-  }
+}
 
 /*input elrejtése*/
 #menuToggle input {
@@ -171,13 +172,13 @@ h2 {
     transition: left 0.3s ease;
     border-top: 5px solid rgb(254, 190, 16);
     border-radius: 1px 50px 5px 5px; 
-  }
+}
 
-  #menu li {
+#menu li {
     padding: 5px 15px;
     border-bottom: 3px solid rgb(254, 190, 16);
     border-radius: 5px;
-  }
+}
 
 #menuToggle input:checked ~ ul {
     left: 0;
@@ -234,9 +235,10 @@ footer {
     line-height: 1.4;    
 }
 
-.results ul::first-line {
+.results li:first-child {
     text-decoration-line: underline;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .results ul a:link, 
@@ -608,6 +610,12 @@ input[type=reset]:hover {
     .menu {
         display: none;
     }
+
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
     
     h1 {
         font-size: 5.0rem;
@@ -642,5 +650,11 @@ input[type=reset]:hover {
 
     .ligatable {
         display: none;
+    }
+
+    h1 {
+        font-size: 4.0rem;
+        word-spacing: 6px;
+        letter-spacing: 2px;
     }
 }
