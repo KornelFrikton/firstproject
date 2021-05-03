@@ -1,28 +1,20 @@
-# Első projektmunka - Static HTML & CSS
+# First portfolio work - Static HTML & CSS
 ---
 **1. Index.html**
-- hírfolyam képekkel, videókkal és szöveggel
-- eredmények lista
-- tabella táblázat
-- menü pozíció: sticky
+- news with pictures and video
+- results list
+- league standings
+- menu position: sticky
 
 **2. Team.html**
-- csapattagok képei (nevek tooltipként történő megjelenítése)
+- photos of the players (names with tooltips)
 
 **3. Honours.html**
-- csapat nemzetközi és spanyol sikerei (animált számok)
+- international and Spanish cups (animated numbers)
 
 **4. Contact.html**
-- beküldhető űrlap kötelező és opcionálisan kitöltendő mezőkkel
+- contact form with required and optional fields
 
 ---
 
-### Javítandó részek
-- [x] eredménylista ` <ul> <li> ` rendszer javítása *index.html*-ben
-- [x] CSS egyszerűsítése, duplikált részek törlése *styles.css*-ben
-- [x] képhivatkozások javítása *team.html* és *honours.html*-ben
-- [x] hamburgermenü készítése mobilnézet esetén - **mobil first** elősegítése
-- [x] HTML validációs hibák javítása 
-
----
 *2020.10.28*

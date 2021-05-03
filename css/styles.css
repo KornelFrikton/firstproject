@@ -9,8 +9,8 @@ html {
     margin: 0;
     padding: 0;
 }
-/*MINDEN-OLDAL-----------------------------------*/
-/*fejléc*/
+/*ALL PAGE-----------------------------------*/
+/*header*/
 header {
     display: block;
     background-image: url(../pics/flag2.jpg), linear-gradient(to right, rgb(255, 255, 255, 1), rgba(255,255,255,0.9), 70%, rgba(255,255,255,0.01) 100%);
@@ -44,7 +44,7 @@ h2 {
     text-shadow: 2px 2px 2px rgb(0, 82, 152);
 }
 
-/*menü*/
+/*menu*/
 .menu {
     grid-area: 1/1/4/2;
 }
@@ -76,8 +76,8 @@ h2 {
     color: rgba(254,190,16,1);
 }
 
-/*hamburger menü*/
-/*ikon*/
+/*hamburger menu*/
+/*icon*/
 #menuToggle label q {
     display: block;
     width: 30px;
@@ -100,7 +100,7 @@ h2 {
     transform-origin: 0% 0%;
 }
 
-/*hamburger menü pozíció*/
+/*hamburger menu position*/
 #menuToggle {
     display: block;
     position: relative;
@@ -126,7 +126,7 @@ h2 {
     background: rgba(254,190,16,1);
 }
 
-/*input elrejtése*/
+/*input hiding*/
 #menuToggle input {
     display: block;
     width: 30px;
@@ -160,7 +160,7 @@ h2 {
     display: none;
   }
 
-/*menü lista*/
+/*menu list*/
 #menu {
     position: absolute;
     margin: -40px 0 0 -20px;
@@ -184,7 +184,7 @@ h2 {
     left: 0;
   }
 
-/*lábléc*/
+/*footer*/
 footer {
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -217,7 +217,7 @@ footer {
     opacity: 0.95;
 }
 
-/*eredmények*/
+/*results*/
 .results {
     grid-area: 1/3/3/4;
     border-top: 15px solid rgba(254,190,16,1);
@@ -225,7 +225,7 @@ footer {
     padding: 0px 0px 20px 0px;
 }
 
-/*eredmények lista*/
+/*results list*/
 .results ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.3rem;
@@ -258,7 +258,7 @@ footer {
     border-radius: 1px 50px 5px;
 }
 
-/*táblázat*/
+/*standings*/
 .ligatable {
     grid-area: 3/3/4/4;
     border-top: 15px solid rgba(254,190,16,1);
@@ -302,7 +302,7 @@ footer {
     background-color: rgba(254,190,16,1);
 }
 
-/*szövegrész*/
+/*news*/
 h3 {
     font-family: "Lucida Console", Monaco, monospace;
     text-align: left;
@@ -334,7 +334,7 @@ h4 {
     padding: 20px;
 }
 
-/*képek videók*/
+/*picture video*/
 .photo div,
 .video div {
     background-image: none;
@@ -599,7 +599,7 @@ input[type=reset]:hover {
     width: 150px;
 }
 
-/*MOBIL-VÁLTOZAT-------------------------------*/
+/*MOBIL-Version-------------------------------*/
 @media screen and (min-width: 992px) {
     .hamburger {
         display: none;

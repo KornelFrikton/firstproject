@@ -5,84 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/beon" type="text/css"/>
-    <title>Kapcsolat</title>
+    <title>Contact</title>
 </head>
 <body>
     <header class="mainhead">
         <h1>Real Madrid
-            szurkolói oldal</h1>
-
+            Fan Page</h1>
+        
         <nav class="hamburger">
             <div id="menuToggle"> 
-                <!--rejtett checkbox-->
+                <!--hidden checkbox-->
                 <input id="toggle" name="Toggle" type="checkbox" />
                 <label for="toggle">
-                    <span>Menü</span>
-                    <!--hamburger ikon-->
+                    <span>Menu</span>
+                    <!--hamburger icon-->
                     <q></q>
                     <q></q>
                     <q></q>
                 </label>
                 <ul id="menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#lastnews">Hírek</a></li>
-                    <li><a href="team.html">Csapat</a></li>
-                    <li><a href="honours.html">Sikerek</a></li>
-                    <li><a href="contact.html">Kapcsolat</a></li>
+                    <li><a href="index.html#lastnews">News</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="honours.html">Honours</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
-
     </header>
 
     <div class="maincontact">
-
+        
         <nav class="menu">
-            <div><h2>Menü</h2></div>
+            <div><h2>Menu</h2></div>
             <div>
             <a href="index.html">Home</a>
-            <a href="index.html#lastnews">Hírek</a>
-            <a href="team.html">Csapat</a>
-            <a href="honours.html">Sikerek</a>
-            <a href="contact.html">Kapcsolat</a>
+            <a href="index.html#lastnews">News</a>
+            <a href="team.html">Team</a>
+            <a href="honours.html">Honours</a>
+            <a href="contact.html">Contact</a>
             </div>
         </nav>
 
         <div class="contact">
-            <h2>Kapcsolat</h2>
+            <h2>Contact</h2>
             <form action="https://formspree.io/moqkgajn" method="POST">
                 <fieldset>
-                <legend>Üzenj az oldal készítőjének:</legend>
+                <legend>Send message to the admin:</legend>
 
                 <div>
-                    <label for="vezeteknev">Vezetéknév:</label><br>
-                    <input type="text" id="vezeteknev" name="Vezetéknév" placeholder="Írd be a vezetékneved" required/>
+                    <label for="lastname">Last name:</label><br>
+                    <input type="text" id="lastname" name="Lastname" placeholder="Give me your last name" required/>
                 </div>
                 <div>
-                    <label for="keresztnev">Keresztnév:</label><br>
-                    <input type="text" id="keresztnev" name="Keresztnév" placeholder="Írd be a keresztneved" required/>
+                    <label for="firstname">First name:</label><br>
+                    <input type="text" id="firstname" name="Firstname" placeholder="Give me your first name" required/>
                 </div>
                 <div>
-                    <label for="email">E-mail cím:</label><br>
-                    <input type="email" id="email" name="E-mail" placeholder="pl. valami@email.com" required/>
+                    <label for="email">E-mail address:</label><br>
+                    <input type="email" id="email" name="E-mail" placeholder="johndoe@email.com" required/>
                 </div>
                 <div>
-                    <label for="uzenet">Üzenet:</label><br>
-                    <textarea id="uzenet" name="Üzenet" placeholder="Vélemény, javaslat, kritika, ötlet..." required></textarea>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="Message" placeholder="Comment, idea, critic, suggestion..." required></textarea>
                 </div>
                 <div>
-                    <label>Milyenre értékeled az oldalt?</label><br>
-                    <input type="radio" id="velemeny-0" name="Értékelés" value="0"/>
-                    <label for="velemeny-0">Nem tetszik</label><br>
-                    <input type="radio" id="velemeny-1" name="Értékelés" value="1"/>
-                    <label for="velemeny-1">Nem rossz, de lenne még mit fejleszteni rajta</label><br>
-                    <input type="radio" id="velemeny-2" name="Értékelés" value="2"/>
-                    <label for="velemeny-2">Nagyon tetszik</label>
+                    <label>Rate the website</label><br>
+                    <input type="radio" id="rate-0" name="Rating" value="0"/>
+                    <label for="rate-0">I don't like it</label><br>
+                    <input type="radio" id="rate-1" name="Rating" value="1"/>
+                    <label for="rate-1">Not bad, but needs some improvements</label><br>
+                    <input type="radio" id="rate-2" name="Rating" value="2"/>
+                    <label for="rate-2">I love it</label>
                 </div>
                 <div>
-                    <label for="jatekos">Ki a kedvenc játékosod?</label>
-                    <select id="jatekos" name="Kedvenc">
-                        <option value="0" selected>Válassz egy játékost:</option>
+                    <label for="player">Who is your favourite player?</label>
+                    <select id="player" name="Favourite">
+                        <option value="0" selected>Select a player:</option>
                         <option value="1">Thibaout Courtois</option>
                         <option value="2">Andriy Lunin</option>
                         <option value="3">Daniel Carvajal</option>
@@ -103,17 +102,16 @@
                         <option value="18">Karim Benzema</option>
                         <option value="19">Marco Asensio</option>
                         <option value="20">Lucas Vazquez</option>
-                        <option value="21">Luka Jovic</option>
-                        <option value="22">Vinicius Junior</option>
-                        <option value="23">Mariano Diaz</option>
-                        <option value="24">Rodrygo</option>
-                        <option value="25">Zinedine Zidane :)</option>
+                        <option value="21">Vinicius Junior</option>
+                        <option value="22">Mariano Diaz</option>
+                        <option value="23">Rodrygo</option>
+                        <option value="24">Zinedine Zidane :)</option>
                     </select>
                 </div>
 
                 <div>
-                    <input type="submit" value="Beküldés">
-                    <input type="reset" value="Törlés">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
                 </div>
             
                 </fieldset>
